@@ -2,6 +2,7 @@ const express = require("express");
 const recipes = require("./data/recipes.json");
 const ingredients = require("./data/ingredients.json");
 const app = express();
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("words");
@@ -32,6 +33,10 @@ app.get("/recipes/:id", (req, res) => {
   });
 
   res.json({ ...recipe, ingredients: recipeIngredients.ingredients });
+});
+app.post("/new_recipe", (req, res) => {
+  console.log(req.body);
+  res.json(req.body);
 });
 
 app.listen(5000, console.log("listening"));
