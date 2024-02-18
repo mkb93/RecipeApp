@@ -1,3 +1,4 @@
+const { writeFile } = require("fs");
 const express = require("express");
 const recipes = require("./data/recipes.json");
 const ingredients = require("./data/ingredients.json");
@@ -35,8 +36,13 @@ app.get("/recipes/:id", (req, res) => {
   res.json({ ...recipe, ingredients: recipeIngredients.ingredients });
 });
 app.post("/new_recipe", (req, res) => {
-  console.log(req.body);
-  res.json(req.body);
+  const newId = req.body["id"];
+  const exists = recipes.find((item) => {
+    return item.id === newId;
+  });
+  if (exists) return res.status(400).send("recipe id already exists");
+  const newRecipes = [...recipes, req.body];
+  return res.json(newRecipes);
 });
 
 app.listen(5000, console.log("listening"));
