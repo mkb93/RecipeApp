@@ -1,4 +1,4 @@
 [
   { "recipe_id": 1, "ingredients": ["500 grams Flour", "2 tomato "] },
-  { "recipe_id": 2, "ingredients": [] }
+  { "recipe_id": 2, "ingredients": ["500 grams Flour", "2 eggs"] }
 ]

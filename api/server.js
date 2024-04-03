@@ -1,12 +1,17 @@
 const { writeFile } = require("fs");
 const express = require("express");
+const cors = require("cors");
 const recipes = require("./data/recipes.json");
 const ingredients = require("./data/ingredients.json");
 const app = express();
 app.use(express.json());
-
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+  })
+);
 app.get("/", (req, res) => {
-  res.send("words");
+  res.json("words");
 });
 app.get("/recipes", (req, res) => {
   res.json(recipes);

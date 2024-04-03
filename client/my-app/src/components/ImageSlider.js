@@ -1,27 +1,22 @@
 import logo from "./logo.svg";
-import "./css/App.css";
+import "../css/recipes.css";
 import React, { useState, useEffect } from "react";
 
-function App() {
+function Recipes() {
   const [information, setInformation] = useState("haha");
   useEffect(() => {
-    fetch("http://localhost:5000/recipes")
+    fetch("http://localhost:5000/recipes_img")
       .then((response) => response.json())
       .then((data) => {
         const titles = data.map((el) => {
           return el.image;
         });
-        setInformation(titles);
+        setInformation(titles.join(" "));
         console.log(data);
       })
       .catch((error) => console.log(error));
   }, []);
-  return (
-    <div>
-      information.map(el)
-      <img src={information} alt=""></img>
-    </div>
-  );
+  return <div></div>;
 }
 
-export default App;
+export default Recipes;
