@@ -11,7 +11,7 @@ app.use(
   })
 );
 app.get("/", (req, res) => {
-  res.json("words");
+  res.json('words');
 });
 app.get("/recipes", (req, res) => {
   res.json(recipes);
@@ -50,4 +50,6 @@ app.post("/new_recipe", (req, res) => {
   return res.json(newRecipes);
 });
 
-app.listen(5000, console.log("listening"));
+// app.listen(5000, console.log("listening"));
+
+module.exports = app;
