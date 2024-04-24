@@ -11,7 +11,7 @@ app.use(
   })
 );
 app.get("/", (req, res) => {
-  res.json('words');
+  res.json("words");
 });
 app.get("/recipes", (req, res) => {
   res.json(recipes);

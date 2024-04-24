@@ -5,7 +5,7 @@ export interface TextProps {
   contents: string;
 }
 const Text: React.FC<TextProps> = ({ contents }) => {
-  return <p>{contents}</p>;
+  return <p className="size-limit">{contents}</p>;
 };
 
 export default Text;
