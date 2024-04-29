@@ -2,10 +2,10 @@ import React from "react";
 import "./Text.css";
 
 export interface TextProps {
-  contents: string;
+  dataSet: any;
 }
-const Text: React.FC<TextProps> = ({ contents }) => {
-  return <p className="size-limit">{contents}</p>;
+const Text: React.FC<TextProps> = ({ dataSet }) => {
+  return <p className="size-limit">{dataSet.description}</p>;
 };
 
 export default Text;

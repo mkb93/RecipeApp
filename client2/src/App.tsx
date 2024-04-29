@@ -41,16 +41,16 @@ function App() {
     <div className="App">
       <Button
         onClick={() => {
-          setIndex(Math.abs(index + 1) % RecipeTitle.length);
+          setIndex((index + 1) % RecipeTitle.length);
         }}
         content="Next"
       ></Button>
       <Header dataSet={dataSet[index]}></Header>
-      <Image url={image[index]}></Image>
-      <Text contents={text[index]}></Text>
+      <Image dataSet={dataSet[index]}></Image>
+      <Text dataSet={dataSet[index]}></Text>
       <Button
         onClick={() => {
-          setIndex(Math.abs(index - 1) % RecipeTitle.length);
+          setIndex(index > 0 ? index - 1 : RecipeTitle.length - 1);
         }}
         content="Previous"
       ></Button>
