@@ -1,0 +1,26 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.image-slider img {
+  max-width: 50vw; /* Ensure the image doesn't exceed container width */
+  height: 50vh; /* Maintain aspect ratio */
+  object-fit: cover;
+  border: 5px solid #007bff; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Blue shadow */
+  margin: 0;
+}
+.title {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 0; /* Add space between text and images */
+}
+.description {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 20px;
+  margin-left: 20vh;
+}
