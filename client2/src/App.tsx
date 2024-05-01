@@ -28,7 +28,6 @@ function App() {
         const desc = data.map((el: any) => {
           return el.description;
         });
-        // setInformation(titles);
 
         setImage(images);
         setText(desc);

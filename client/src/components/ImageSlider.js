@@ -1,6 +1,7 @@
 import "../css/recipes.css";
 import React, { useState, useEffect } from "react";
 import Button from "./button/Button";
+import Modal from "./modal/Modal";
 
 function Recipes() {
   const [information, setInformation] = useState(["haha"]);
@@ -26,6 +27,10 @@ function Recipes() {
       })
       .catch((error) => console.log(error));
   }, []);
+  const shortenedDescripter =
+    description[index].length > 50
+      ? description[index].substring(0, 50) + "..."
+      : description[index];
   return (
     <div>
       <Button
@@ -42,8 +47,12 @@ function Recipes() {
         <div class="image-slider">
           <img src={information[index]} alt=""></img>
         </div>
+
         <div class="description">
-          <p>{description[index]}</p>
+          <p>
+            {shortenedDescripter}
+            <Modal description={description[index]}></Modal>
+          </p>
         </div>
       </div>
       <Button

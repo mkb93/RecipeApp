@@ -13,14 +13,14 @@
   },
   {
     "id": 3,
-    "title": "test",
+    "title": "Test",
     "description": "noodle like food, this is to write a huge a amount of information that is mainly irrelevant but good for me to test weather It is functional at the end of the day",
     "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fvector-premium%2Femblema-logo-comida-rapida_7087-753.jpg%3Fw%3D2000&f=1&nofb=1&ipt=d25e464ca646c0beeae45e3560eadfb0464c7539360941aa123829bb01d16164&ipo=images"
   },
   {
     "id": 4,
-    "title": "tests",
-    "description": "noodle aeuifhiuasfhasijhfaskjfhasdijhfasjfhgasjhgfasojfghasfhlike food, this is to write a huge a amount of information that is mainly irrelevant but good for me to test weather It is functional at the end of the day",
-    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fvector-premium%2Femblema-logo-comida-rapida_7087-753.jpg%3Fw%3D2000&f=1&nofb=1&ipt=d25e464ca646c0beeae45e3560eadfb0464c7539360941aa123829bb01d16164&ipo=images"
+    "title": "Tagliatelle con salsa bolognese",
+    "description": "Indulge in our Tagliatelle al Ragu, a timeless Italian favorite. Tender tagliatelle pasta, perfectly paired with our rich and flavorful Bolognese sauce. Slow-simmered with ground meats, aromatic vegetables, and a splash of wine, this dish is a true taste of Italy. Topped with Parmesan cheese and parsley for an extra touch of perfection.",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/210211140150-02-classic-italian-dishes.jpg?q=w_3888,h_2187,x_0,y_0,c_fill"
   }
 ]
